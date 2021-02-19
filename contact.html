@@ -26,7 +26,9 @@
   <body id="home">
     <div id="">
       <header>
-        <nav class="navbar navbar-expand-md navbar-light ml-auto mr-auto">
+        <nav
+          class="navbar navbar-expand-md navbar-light ml-auto mr-auto sticky-top"
+        >
           <a class="navbar-brand" href="#"
             ><img src="images/logo.png" alt=""
           /></a>
@@ -65,39 +67,115 @@
       </header>
 
       <main class="container">
-        <h1 class="col-12 text-center">
-          Introducing California's Greatest Cliffs
-        </h1>
-        <div class="d-flex justify-content-between flex-wrap">
-          <div class="col-sm-12 col-lg-6">
-            <div class="border p-3 mb-lg-0 mb-md-2 mb-sm-2 h-100">
-              <h2 class="text-center">
-                What is so unique about California cliffs?
-              </h2>
-              <p>
-                California cliffs are one of a kind in the United States where
-                no cliffs are as manificent and beautiful as them. And
-                California is the only state that have cliffs that fronts all
-                possible environments: sea, river, mountains and canyons. There
-                are four such individual unique cliffs: West Cliff, North Cliff,
-                East Cliff and South Cliff. All offer fantastic overlooking
-                views, recreational areas, camping sites, wildlife watch spots
-                and overnight cabins.
-              </p>
-            </div>
-          </div>
+        <h1 class="h1">Contact Us</h1>
+        <p>
+          There are many planned activities at all the cliff sites. Some are
+          scheduled daily, weekly, monthly and yearly.
+        </p>
 
-          <div class="col-sm-12 col-lg-6">
-            <div class="border p-3 mt-lg-0 mt-md-2 mt-sm-2 h-100">
-              <h2 class="text-center">Where are these cliffs?</h2>
-              <p class="">
-                Located within a 100 mile radius from Irvine, California, they
-                can be reached by roads easily. The closest cliff to Irvine is
-                West Cliff, which is the most popular and most visited.
-              </p>
+        <h2>Phone</h2>
+        <p>800Gcliffs</p>
+
+        <h2>Email</h2>
+        <p>info@greatcliff.com</p>
+
+        <form action="/signup" method="POST">
+          <fieldset>
+            <legend>Contact Form</legend>
+
+            <div class="form-group">
+              <label for="usr">Name:</label>
+              <span class="badge badge-pill badge-warning">Required</span>
+              <input
+                type="text"
+                class="form-control"
+                id="usr"
+                placeholder="John Doe"
+              />
             </div>
-          </div>
-        </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <span class="badge badge-pill badge-warning">Required</span>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="mobile">Number:</label>
+              <span class="badge badge-pill badge-warning">Required</span>
+              <input
+                type="text"
+                class="form-control"
+                id="mobile"
+                placeholder="xxx-xxx-xxxx"
+              />
+            </div>
+
+            <label
+              >How should we contact you
+              <span class="badge badge-pill badge-warning"
+                >Required</span
+              ></label
+            ><br />
+            <select class="form-control" id="selectContact">
+              <option>Select One</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+            </select>
+
+            <div id="contactMethod"></div>
+
+            <br /><label>Which cliff are you inquiring</label>
+            <select class="form-control">
+              <option>West cliff</option>
+              <option>North cliff</option>
+            </select>
+
+            <div class="form-group mt-3">
+              <label for="exampleFormControlTextarea1"
+                >How did you hear about us:
+              </label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <div class="randomcode form-group">
+              <span class="badge badge-pill badge-warning">Required</span>
+              <input
+                id="codeentered"
+                class="form-control"
+                type="text"
+                name="randomcode"
+                placeholder="Enter Characters as shown below"
+              />
+              <button
+                type="button"
+                id="codes"
+                class="btn btn-outline-secondary mt-3 p-3"
+                disabled
+              >
+                Secondary
+              </button>
+            </div>
+
+            <div class="button">
+              <button
+                type="button"
+                id="submit"
+                class="btn btn-lg btn-primary"
+                disabled
+              >
+                Inquire
+              </button>
+            </div>
+          </fieldset>
+        </form>
       </main>
 
       <section>
@@ -186,5 +264,8 @@
     <!-- Bootstrap Popper -->
 
     <!-- Bootstrap JS -->
+
+    <script src="js/site_scripts.js"></script>
+    <script src="js/randomcodes.js"></script>
   </body>
 </html>

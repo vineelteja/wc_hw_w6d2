@@ -1,0 +1,200 @@
+header {
+  background-image: url("images/cliff_ocean.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+}
+
+h1 {
+  color: chartreuse;
+}
+
+nav ul,
+nav li,
+li {
+  display: inline-block;
+  padding-left: 3pc;
+  padding-top: 25px;
+}
+
+nav img {
+  height: 100px;
+  width: 100px;
+}
+
+main,
+.container {
+  height: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-container {
+  margin: auto;
+  height: inherit;
+  width: inherit;
+}
+
+.ul-div {
+  height: 500px;
+  display: inline;
+  border: solid red;
+  line-height: 50px;
+}
+
+.img-div {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  /* margin-left: 100px; */
+  line-height: 50px;
+}
+
+.img-div img {
+  height: inherit;
+  width: inherit;
+}
+.partner {
+  background-color: bisque;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+li img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.span-div {
+  margin-left: 30pc;
+  text-align: right;
+  align-content: right;
+}
+
+footer img {
+  background-color: honeydew;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.span-div span {
+  background-color: lightskyblue;
+  border-radius: 50%;
+}
+
+.copy-right {
+  margin: 0px 40px;
+}
+
+.description {
+  margin: 0px 20px;
+  padding: 20px;
+  text-align: left;
+  width: 80%;
+  padding-left: 10%;
+  /* background-color: beige; */
+}
+
+.div-out {
+  display: flex;
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 20px;
+}
+
+.div-p {
+  width: 50%;
+  text-align: left;
+}
+
+.div-img {
+  width: 50%;
+  text-align: right;
+}
+
+footer p {
+  width: 80%;
+  text-align: left;
+  margin: 0px 20px;
+}
+
+footer {
+  background-color: lightgreen;
+}
+
+.nav-contain {
+  margin: auto;
+  width: 700px;
+  min-height: 100px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.link-div ul li {
+  margin-top: 500px;
+  display: inline;
+  list-style-type: none;
+  padding: 40px 25px;
+  line-height: 100px;
+  border-left: 0.5px solid gray;
+}
+.main-img,
+.link-div,
+.link-div ul {
+  display: inline;
+}
+.main-img img {
+  margin-right: 160px;
+  float: left;
+  display: inline;
+  height: 100px;
+  width: 100px;
+}
+
+li a {
+  /* remove underline */
+  text-decoration: None;
+}
+
+li a:link {
+  /* before click  */
+  color: #000;
+}
+
+li a:visited {
+  /* after click  */
+  color: #818db3;
+}
+
+li a:hover {
+  /* mouse over */
+  color: white;
+}
+
+li a:active {
+  /* mouse down  */
+  color: #753a30;
+}
+
+.link-div li:hover {
+  background-color: greenyellow;
+  color: white;
+}
+
+#timeofday {
+  padding: 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(251, 215, 139, 1) 0%,
+    rgba(118, 213, 245, 1) 100%
+  );
+  text-align: center;
+}
