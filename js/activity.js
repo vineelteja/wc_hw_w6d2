@@ -24,6 +24,7 @@ $(document).ready(function () {
 
   $("td").click(function () {
     if ($(this).is("td:first-child")) {
+
     } else if (
       $(this).css("background-color") == "rgb(152, 251, 152)" &&
       $(this).text() != "Not Available"
@@ -34,13 +35,19 @@ $(document).ready(function () {
         color: "white",
         "font-weight": "bold",
       });
+      
+      // Bootstrap model pop up only on table cell that's intended.
+      $(this).attr({
+        "data-toggle": "modal",
+        "data-target":"#exampleModal"
+      })
 
       // add selected cell contents to inquire div
-      var activities_inquire = $(".activities-inquire h2");
       var cell_text = $(this).text();
       var th_index = $(this).index();
       var dir = getHeader(th_index);
-      activities_inquire.after(`<p>${cell_text} at ${dir}</p>`);
+      var activities_inquire = $(".modal-body");
+      activities_inquire.append(`<p>${cell_text} at ${dir}</p>`);
 
       count += 1;
     } else {
@@ -55,7 +62,7 @@ $(document).ready(function () {
       }
       //remove <p> from inquire div
       td_text = $(this).text();
-      var activities_inquire = $(".activities-inquire p");
+      var activities_inquire = $(".modal-body p");
       var th_index = $(this).index();
       var dir = getHeader(th_index);
       activities_inquire.filter(function () {
